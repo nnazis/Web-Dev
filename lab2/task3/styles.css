@@ -38,9 +38,6 @@ h1.title {
     font-weight: 600;
     margin-bottom: 44px;
 }
-
-
-
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,7 +59,7 @@ h1.title {
     font-family: "Mona Sans";
     margin-bottom: 10px;
 }
-.pum {
+.per {
 
     position: relative;
     top: -0.5em;
@@ -98,7 +95,7 @@ h1.title {
     gap: 12px;
     align-items: center;
     width: 100%;
-  }
+}
 .black-button {
     display: inline-flex;
     align-items: center;
@@ -124,7 +121,6 @@ h1.title {
     text-decoration: none;
     margin-bottom: 44px;
 }
-
 details { 
     border: 0; 
 }
@@ -147,26 +143,21 @@ summary {
     color: #2d333b;
     padding: 4px 0;
 }
-
 summary::before {
     content: "›";
     transform: translateY(-1px);
     color: #57606a;
     font-size: 18px;
 }
-
 details[open] summary::before {
     transform: rotate(90deg);
 }
-
 .detail-body {
     color: #57606a;
     padding: 6px 0 4px 20px;
     line-height: 1.5;
     font-size: 14px;
 }
-
-
 .addons {
     margin-top: 64px;
     text-align: center;
@@ -222,16 +213,4 @@ details[open] summary::before {
     color:black;
     text-decoration: none;
     font-weight: 600;
-}
-
-@media (max-width: 900px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    .addon-grid {
-        grid-template-columns: 1fr;
-    }
-    .button {
-        flex-direction: column;
-    }
 }
