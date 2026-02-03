@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(28, 30, 33);
+    position: relative;
+}
+.topbar {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px 40px;
+    width: 100%;
+}
+.left-side {
+    text-align: left;
+    padding-left: 40px;
+    max-width: 620px;
+}
+.left-side h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    max-width: 520px;
+}
+.left-side img {
+    margin-top: 20px;
+    height: 520px;
+    max-width: 100%;
+}
+.preview {
+    height: 520px;
+    max-width: 100%;
+}
+.right-side {
+    width: 360px;
+    border-left: 1px solid lightgray;
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    min-height: 600px;
+}
+.right-side input {
+    padding: 10px 12px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.right-side button {
+    width: 100%;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.login-title {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.login-side {
+    max-width: 360px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.login-side a {
+    display: block;
+    text-align: center;
+    color: rgb(28, 30, 33);
+    text-decoration: none;
+    margin-top: 6px;
+    font-size: 14px;
+}
+.login-side p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.login {
+    background-color: rgb(0, 136, 244);
+    color: white;
+    text-align: center;
+}
+.facebook {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+.facebook a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: rgb(28, 30, 33);
+    font-size: 14px;
+}
+.facebook img {
+    height: 18px;
+}
+.new-account {
+    background-color: white;
+    border-color: rgb(0, 136, 244);
+    color: rgb(0, 136, 244);
+}
+.meta {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.footer {
+    border-top: 1px solid lightgray;
+    width: 100%;
+    padding: 20px;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-bottom: 10px;
+}
+
+
