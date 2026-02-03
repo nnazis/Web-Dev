@@ -94,7 +94,6 @@ hr {
     font-size: 16px;
     cursor: pointer;
     align-self: center;
-    transition: background-color 0.3s ease;
 }
 .create-page {
     font-size: 12px;
@@ -121,9 +120,6 @@ hr {
 .footer a {
     color: #8a8d91;
     text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
 }
 .footer-languages {
     max-width: 980px;
