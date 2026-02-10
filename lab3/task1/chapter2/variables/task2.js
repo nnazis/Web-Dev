@@ -1,0 +1,2 @@
+let nameOfThePlanet;
+let currentVisitor;
