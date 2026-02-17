@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: pink;
+    color: black;
+}
+.header {
+    background-color: #f85681;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+.header h1 {
+    font-size: 20px;
+}
+.main {
+    margin: 30px auto;
+    background-color: #fcc8b8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 18px;
+}
+.my-todo label {
+    display: flex;
+    font-weight: bold;
+}
+.text {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.text input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.text button {
+    padding: 10px 18px;
+    border: 1px solid;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+.del {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    background-position: center;
+}
+.done span {
+    text-decoration: line-through;
+    color: gray;
+}
