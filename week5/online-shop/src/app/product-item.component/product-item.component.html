@@ -1,0 +1,18 @@
+<div class="product-card">
+  <a [href]="product().link" target="_blank">
+    <img [src]="currentImage()" alt="{{ product().name }}" class="main-image">
+  </a>
+  <div class="gallery">
+    @for (img of product().images; track $index) {
+      <img [src]="img" alt="Thumbnail" (click)="changeImage(img)" class="thumbnail">
+    }
+  </div>
+  <h3>{{ product().name }}</h3>
+  <p>{{ product().description }}</p>
+  <p>Цена: {{ product().price }} KZT</p>
+  <p>Рейтинг: {{ getStars(product().rating) }}</p>
+  <p>Лайки: ❤️ {{ product().likes }}</p>
+  <button (click)="like()">Лайк</button>
+  <button (click)="share()">Поделиться</button>
+  <button (click)="onDelete()">Удалить</button>
+</div>

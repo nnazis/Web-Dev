@@ -1,0 +1,20 @@
+<div class="categories">
+  @for (cat of categories; track cat.id) {
+    <button 
+        (click)="selectCategory(cat.id)" 
+        [class.selected]="selectedCategory() === cat.id">{{ cat.name }}
+    </button>
+  }
+</div>
+
+@if (selectedCategory()) {
+  <app-product-list 
+  [products]="getCurrentProducts()" 
+  (delete)="deleteProduct($event)">
+  </app-product-list>
+} @else {
+    <div class="welcome">
+        <h1>Kaspi.kz</h1>
+        <p class="welcome">Добро пожаловать! Выберите категорию, чтобы просмотреть продукты.</p>
+    </div>
+}
