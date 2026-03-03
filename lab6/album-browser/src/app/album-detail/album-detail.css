@@ -1,3 +1,7 @@
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 .album-details {
   padding: 0.5rem 0;
 }
@@ -7,6 +11,7 @@
 }
 
 .title-input {
+  font-family: serif;
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
@@ -22,7 +27,7 @@
 }
 
 .button-group .primary {
-  background-color: #1976d2;
+  background-color: #d06f6e;
   color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
@@ -31,20 +36,26 @@
 }
 
 .button-group .primary:hover {
-  background-color: #115293;
+  background-color: #d06f6e;
 }
 
 .button-group .secondary {
   background-color: #e0e0e0;
   color: #424242;
   border: none;
-  padding: 0.5rem 1rem;
+  margin-right: 10px;
+  padding: 8px 14px;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
   display: inline-block;
 }
 
 .button-group .secondary:hover {
-  background-color: #bdbdbd;
+  background-color: #d06f6e;
+}
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 10px;
 }

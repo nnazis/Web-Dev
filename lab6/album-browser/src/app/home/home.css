@@ -1,11 +1,17 @@
 h1 {
+  font-size: 30px;
   margin-top: 0;
+  font-family: serif;
 }
-
+p {
+    font-size: 18px;
+    font-family: serif;
+}
 .button {
+  font-family: serif;
   display: inline-block;
-  background-color: #1976d2;
-  color: #ffffff;
+  background-color: #d06f6e;
+  color: black;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -13,5 +19,5 @@ h1 {
 }
 
 .button:hover {
-  background-color: #115293;
+  background-color: #952c2c;
 }

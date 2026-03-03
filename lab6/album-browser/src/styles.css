@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: coruier;
   background-color: #f7f7f7;
 }
 
 nav {
-  background-color: #1976d2;
+  background-color: #d06f6e;
   color: #ffffff;
   padding: 0.5rem 1rem;
   display: flex;
