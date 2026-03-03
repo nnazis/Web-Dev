@@ -32,24 +32,10 @@ export class AlbumPhotos implements OnInit {
   }
 
   fetchPhotos(id: number): void {
-    this.loading = true;
-    this.error = '';
-    this.photos = [];
-
-    this.albumService.getAlbumPhotos(id).subscribe({
-      next: (data) => {
-        console.log('PHOTOS:', data);
-        this.photos = data;
-        this.loading = false;
-      },
-      error: (e) => {
-        console.log(e);
-        this.error = 'Failed to load photos';
-        this.loading = false;
-      },
-    });
-  }
-
+  this.albumService.getAlbumPhotos(id).subscribe((data) => {
+    this.photos = [...data]; 
+  });
+}
   goBack(): void {
     this.location.back();
   }
