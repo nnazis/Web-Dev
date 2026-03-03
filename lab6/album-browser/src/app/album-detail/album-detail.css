@@ -1,0 +1,50 @@
+.album-details {
+  padding: 0.5rem 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.title-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button-group .primary {
+  background-color: #1976d2;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group .primary:hover {
+  background-color: #115293;
+}
+
+.button-group .secondary {
+  background-color: #e0e0e0;
+  color: #424242;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-group .secondary:hover {
+  background-color: #bdbdbd;
+}

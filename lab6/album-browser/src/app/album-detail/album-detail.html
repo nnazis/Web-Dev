@@ -1,0 +1,19 @@
+<h2 *ngIf="album">Album {{ album.id }}</h2>
+
+<input
+  *ngIf="album"
+  [(ngModel)]="editedTitle"
+  type="text"
+/>
+
+<div>
+  <button (click)="save()">Save</button>
+
+  <a
+    *ngIf="album"
+    [routerLink]="['/albums', album.id, 'photos']">
+    View Photos
+  </a>
+
+  <button (click)="goBack()">Back</button>
+</div>

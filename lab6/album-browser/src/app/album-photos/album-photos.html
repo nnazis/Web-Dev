@@ -1,0 +1,17 @@
+<h2>Album Photos</h2>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="!loading && error">{{ error }}</div>
+
+<ul *ngIf="!loading && photos.length > 0">
+  <li *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+    <div>{{ photo.title }}</div>
+  </li>
+</ul>
+
+<div *ngIf="!loading && !error && photos.length === 0">
+  No photos found.
+</div>
+
+<button type="button" (click)="goBack()">Back</button>
